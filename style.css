@@ -127,7 +127,6 @@ section {
   max-width: 20%;
 }
 
-
 /* slide 5 */
 .actions {
   background-image: linear-gradient(#5177A7, rgb(255, 255, 255));
@@ -149,3 +148,19 @@ section {
   margin-top: 30%;
   margin-left: 60%;
 }
+
+  .slide__brands {
+    background-image: linear-gradient(rgb(131, 118, 100), rgb(69, 49, 40));
+    align-items: center;
+    flex-direction: column;
+  }
+  .slide__brands ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+  }
+  .slide__brands h2 {
+    font-size: 35px;
+    font-weight: lighter;
+  }
