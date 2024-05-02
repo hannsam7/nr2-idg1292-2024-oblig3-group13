@@ -6,15 +6,11 @@ body {
 html {
   scroll-snap-type: y mandatory; /* kilde */
 }
-html,
-body,
-section {
-  block-size: 100%;
-}
 
 /* slide 1 */
 header {
-  height: 100vh;
+  height: 100vw;
+  width: 100vw;
 }
 .top__start {
   clip: rect(0, auto, auto, 0); /* kilde */
@@ -52,17 +48,17 @@ header {
 .waste {
   position: relative;
   scroll-snap-align: start;
-  height: 100vh;
-  width: 100%;
   overflow: hidden;
+  height: 100vw;
+  width: 100vw;
 }
 .waste__image img {
   position: absolute;
-  top: 0;
+  /*top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;*/
 }
 .clouds {
   position: absolute;
@@ -84,17 +80,19 @@ header {
 /* slide 3 */
 .city {
   position: relative;
-  height: 100vh;
   scroll-snap-align: start;
+  overflow: hidden;
+  height: 100vw;
+  width: 100vw;
   background-image: linear-gradient(rgb(131, 118, 100), rgb(255, 255, 255));
 }
 .city__image img {
   position: absolute;
-  top: 0;
+  /*top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;*/
   z-index: 1;
 }
 .smoke {
@@ -112,40 +110,180 @@ header {
 
 /* slide 4 */
 section {
-  display: flex;
-  justify-content: center;
   scroll-snap-align: start; /* kilde */
 }
 
 .brands {
   background-image: linear-gradient(rgb(131, 118, 100), rgb(255, 255, 255));
-  align-items: center;
-  flex-direction: column;
+  height: 100vw;
+  width: 100vw;
+  font-size: 20px;
 }
-
+.brands__list {
+  padding: 5%;
+  text-align: center;
+}
 .brands img {
   max-width: 20%;
+  padding: 5%;
 }
 
 
 /* slide 5 */
 .actions {
   background-image: linear-gradient(#5177A7, rgb(255, 255, 255));
+  height: 100vw;
+  width: 100vw;
+  font-size: 20px;
+}
+.actions__list {
   text-align: center;
   padding: 3%;
-  font-size: 25px;
 }
-.actions__list h3 {
-  text-align: start;
-  padding: 3%;
-}
-.actions ul {
+.actions__list ul {
   text-align: start;
 }
 .actions img {
-  max-width: 40%;
-  max-height: 40%;
-  position: absolute;
-  margin-top: 30%;
-  margin-left: 60%;
+  max-width: 20%;
+  max-height: 20%;
+  margin-left: 70%;
+}
+
+
+/*containers:
+header
+waste
+city
+brands
+actions*/
+
+
+/*animation clouds*/
+@keyframes drift-cloud1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
+.cloud1,
+.cloud2,
+.cloud4 {
+  animation: drift-cloud1 140s linear infinite; 
+}
+
+@keyframes drift-cloud3 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+
+.cloud3 {
+  animation: drift-cloud3 125s linear infinite; 
+}
+
+/*animation tractor*/
+@keyframes move-tractor {
+  0% {
+      transform: translateX(-50%);
+  }
+  40% {
+      transform: translateX(40px);
+  }
+  60% {
+      transform: translateX(40px);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+.tractor {
+  animation: move-tractor 25s linear infinite;
+}
+
+
+/*animation smoke*/
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+.smoke {
+  animation: pulse 5s infinite;
+}
+
+
+
+/*animation logo*/
+@keyframes flip {
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+.zara {
+  animation: flip 8s infinite;
+}
+
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.hm {
+  animation: beat 5s infinite;
+}
+
+
+@keyframes flip2 {
+  50% {
+    transform: rotateX(360deg);
+  }
+}
+
+.gina {
+  animation: flip2 10s infinite;
+}
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.asos {
+  animation: spin 4s infinite;
+}
+
+
+@keyframes stretch {
+  0%, 100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.2);
+  }
+}
+.mango {
+  animation: stretch 4s infinite;
+}
+
+
+@keyframes jump {
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.shein {
+  animation: jump 2s infinite;
 }
