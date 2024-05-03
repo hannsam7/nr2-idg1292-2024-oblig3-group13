@@ -6,6 +6,7 @@
     <title>Fast fashion</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
   <body>
     <header>
@@ -13,6 +14,7 @@
         <div class="top_title">
           <h1>Fast fashion</h1>
         </div>
+        <img class="rain" src="img/rain.svg" alt="Clothes raining over the screen">
       </div>
     </header>
 
@@ -65,16 +67,14 @@
           />
         </svg>
 
-
-
-		<!--traktor-->
-        <svg
-          class="tractor" x="0px" y="0px" viewBox="0 0 2000 1200">
+        <!--traktor-->
+        <svg class="tractor" x="0px" y="0px" viewBox="0 0 2000 1200">
           <rect
             x="658.84"
             y="536.07"
             transform="matrix(-0.5233 0.8521 -0.8521 -0.5233 1511.5699 281.1105)"
-            class="shirt-purple" fill="#5953a2"
+            class="shirt-purple"
+            fill="#5953a2"
             width="36.64"
             height="54.52"
           />
@@ -83,7 +83,8 @@
             x="667.4"
             y="570.28"
             transform="matrix(0.0295 0.9996 -0.9996 0.0295 1240.5656 -102.8439)"
-            class="shirt-purple" fill="#5953a2"
+            class="shirt-purple"
+            fill="#5953a2"
             width="11.69"
             height="34.28"
           />
@@ -92,7 +93,8 @@
             x="691.33"
             y="531.21"
             transform="matrix(0.9048 -0.4258 0.4258 0.9048 -167.144 349.0346)"
-            class="shirt-purple" fill="#5953a2"
+            class="shirt-purple"
+            fill="#5953a2"
             width="11.73"
             height="34.4"
           />
@@ -101,21 +103,25 @@
             x="620.97"
             y="500.83"
             transform="matrix(-0.9617 -0.2741 0.2741 -0.9617 1099.2004 1188.8837)"
-            class="shirt-brown" fill="#7f5656"
+            class="shirt-brown"
+            fill="#7f5656"
             width="23.36"
             height="33.66"
           />
           <polygon
-            class="shirt-brown" fill="#7f5656"
+            class="shirt-brown"
+            fill="#7f5656"
             points="617.44,508.02 610.36,510.12 617.03,530.42 624.11,528.32 	"
           />
           <polygon
-            class="shirt-brown" fill="#7f5656"
+            class="shirt-brown"
+            fill="#7f5656"
             points="651.05,517.56 655.98,523.09 639.55,536.88 634.62,531.34 	"
           />
 
           <path
-            class="pants-blue" fill="#466f7f"
+            class="pants-blue"
+            fill="#466f7f"
             d="M647.34,525.49l1.17,15.25c0.3,3.88-2.61,7.28-6.49,7.57l0,0c-3.88,0.3-7.28-2.61-7.57-6.49l-1.17-15.25
 		c-0.3-3.88,2.61-7.28,6.49-7.57l0,0C643.65,518.7,647.04,521.6,647.34,525.49z"
           />
@@ -124,7 +130,8 @@
             x="659.6"
             y="496.26"
             transform="matrix(-0.1897 -0.9818 0.9818 -0.1897 280.8739 1275.6208)"
-            class="pants-blue" fill="#466f7f"
+            class="pants-blue"
+            fill="#466f7f"
             width="14.42"
             height="51.3"
           />
@@ -133,7 +140,8 @@
             x="661.05"
             y="515.14"
             transform="matrix(-8.817997e-04 -1 1 -8.817997e-04 128.0652 1209.52)"
-            class="pants-blue" fill="#466f7f"
+            class="pants-blue"
+            fill="#466f7f"
             width="14.42"
             height="51.3"
           />
@@ -142,7 +150,8 @@
             x="634.8"
             y="523.87"
             transform="matrix(-0.859 0.512 -0.512 -0.859 1496.3157 690.1635)"
-            class="shirt-red" fill="#b62d2c"
+            class="shirt-red"
+            fill="#b62d2c"
             width="36.64"
             height="54.52"
           />
@@ -151,7 +160,8 @@
             x="632.62"
             y="553.51"
             transform="matrix(-0.4377 0.8991 -0.8991 -0.4377 1431.0258 246.3894)"
-            class="shirt-red" fill="#b62d2c"
+            class="shirt-red"
+            fill="#b62d2c"
             width="11.69"
             height="34.28"
           />
@@ -160,7 +170,8 @@
             x="671.93"
             y="530.02"
             transform="matrix(0.9991 0.0427 -0.0427 0.9991 24.0007 -28.4615)"
-            class="shirt-red" fill="#b62d2c"
+            class="shirt-red"
+            fill="#b62d2c"
             width="11.73"
             height="34.4"
           />
@@ -169,7 +180,8 @@
             x="596.77"
             y="546.04"
             transform="matrix(-0.4275 -0.904 0.904 -0.4275 359.3766 1358.4108)"
-            class="shirt-brown2" fill="#724442"
+            class="shirt-brown2"
+            fill="#724442"
             width="26.05"
             height="38.75"
           />
@@ -178,7 +190,8 @@
             x="592.82"
             y="541.54"
             transform="matrix(-0.8532 -0.5217 0.5217 -0.8532 817.4415 1337.5594)"
-            class="shirt-brown2" fill="#724442"
+            class="shirt-brown2"
+            fill="#724442"
             width="8.31"
             height="24.37"
           />
@@ -187,13 +200,15 @@
             x="606.72"
             y="570.92"
             transform="matrix(-0.138 0.9904 -0.9904 -0.138 1272.7721 58.5826)"
-            class="shirt-brown2" fill="#724442"
+            class="shirt-brown2"
+            fill="#724442"
             width="8.34"
             height="24.45"
           />
 
           <path
-            class="pants-darkblue" fill="#1d363d"
+            class="pants-darkblue"
+            fill="#1d363d"
             d="M623.59,552.91l4.19-14.71c1.07-3.75,4.97-5.92,8.72-4.85l0,0c3.75,1.07,5.92,4.97,4.85,8.72l-4.19,14.71
 		c-1.07,3.75-4.97,5.92-8.72,4.85l0,0C624.7,560.56,622.52,556.66,623.59,552.91z"
           />
@@ -202,7 +217,8 @@
             x="596.88"
             y="523.87"
             transform="matrix(-0.1627 0.9867 -0.9867 -0.1627 1244.5494 42.856)"
-            class="pants-darkblue" fill="#1d363d"
+            class="pants-darkblue"
+            fill="#1d363d"
             width="14.42"
             height="51.3"
           />
@@ -211,7 +227,8 @@
             x="602.07"
             y="505.66"
             transform="matrix(-0.3461 0.9382 -0.9382 -0.3461 1318.6064 143.5439)"
-            class="pants-darkblue" fill="#1d363d"
+            class="pants-darkblue"
+            fill="#1d363d"
             width="14.42"
             height="51.3"
           />
@@ -220,21 +237,25 @@
             x="616.23"
             y="526.5"
             transform="matrix(0.9544 -0.2985 0.2985 0.9544 -133.554 212.194)"
-            class="shirt-green" fill="#577f5f"
+            class="shirt-green"
+            fill="#577f5f"
             width="23.36"
             height="33.66"
           />
           <polygon
-            class="shirt-green" fill="#577f5f"
+            class="shirt-green"
+            fill="#577f5f"
             points="645.91,543.05 650.68,537.41 633.97,524.1 629.2,529.73 	"
           />
           <polygon
-            class="shirt-green" fill="#577f5f"
+            class="shirt-green"
+            fill="#577f5f"
             points="612.58,553.52 605.43,551.59 611.6,531.05 618.75,532.98 	"
           />
 
           <path
-            class="pants-lightblue" fill="#769daa"
+            class="pants-lightblue"
+            fill="#769daa"
             d="M630.76,579.07l9.96,11.61c2.54,2.96,2.2,7.41-0.76,9.95v0c-2.96,2.54-7.41,2.2-9.95-0.76l-9.96-11.61
 		c-2.54-2.96-2.2-7.41,0.76-9.95l0,0C623.77,575.78,628.22,576.12,630.76,579.07z"
           />
@@ -243,7 +264,8 @@
             x="637.14"
             y="539.03"
             transform="matrix(-0.7334 -0.6797 0.6797 -0.7334 733.1017 1416.8307)"
-            class="pants-lightblue" fill="#769daa"
+            class="pants-lightblue"
+            fill="#769daa"
             width="14.42"
             height="51.3"
           />
@@ -252,19 +274,30 @@
             x="649.46"
             y="553.39"
             transform="matrix(-0.5919 -0.806 0.806 -0.5919 578.6293 1451.0631)"
-            class="pants-lightblue" fill="#769daa"
+            class="pants-lightblue"
+            fill="#769daa"
             width="14.42"
             height="51.3"
           />
 
           <path
-            class="carseat black-fill" stroke="#231f20" stroke-miterlimit="10"
+            class="carseat black-fill"
+            stroke="#231f20"
+            stroke-miterlimit="10"
             d="M291.4,497.44H273c-3.93,0-7.12-3.19-7.12-7.12v-43.57c0-5.65,6.26-9.05,11-5.97l10.37,6.74
 	c1.57,1.02,2.68,2.62,3.08,4.46l8.02,36.83C299.32,493.24,295.94,497.44,291.4,497.44z"
           />
-          <rect x="441.3" y="432.87" class="pipe black-fill" stroke="#231f20" stroke-miterlimit="10" width="12.28" height="43.59" />
+          <rect
+            x="441.3"
+            y="432.87"
+            class="pipe black-fill"
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            width="12.28"
+            height="43.59"
+          />
 
-        <!--ratt-->
+          <!--ratt-->
           <path
             d="M392.67,487.16l-32.45-23.82c-1.66-1.22-3.99-0.86-5.21,0.8c-1.22,1.66-0.86,3.99,0.8,5.21l32.45,23.82
 				c1.66,1.22,3.99,0.86,5.21-0.8h0C394.69,490.71,394.33,488.38,392.67,487.16z"
@@ -273,15 +306,47 @@
             d="M367.37,445.18c-1.64-1.21-3.96-0.85-5.16,0.79l-22.37,30.48c-1.21,1.64-0.85,3.96,0.79,5.16
 				c1.64,1.21,3.96,0.85,5.16-0.79l22.37-30.48C369.37,448.7,369.02,446.38,367.37,445.18z"
           />
-        <!--ratt-->
-          
+          <!--ratt-->
 
-          <circle class="back-weel black-fill" stroke="#231f20" stroke-miterlimit="10" cx="271.55" cy="586" r="55.77" />
-          <circle class="front-weel black-fill" stroke="#231f20" stroke-miterlimit="10" cx="492.48" cy="589.98" r="45.04" />
-          <circle class="back-weel-yellow tract-fill" fill="#edad51" stroke="#231f20" stroke-miterlimit="10" cx="271.55" cy="586" r="35.7" />
-          <circle class="front-weel-yellow tract-fill" fill="#edad51" stroke="#231f20" stroke-miterlimit="10" cx="492.48" cy="589.98" r="26.66" />
+          <circle
+            class="back-weel black-fill"
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            cx="271.55"
+            cy="586"
+            r="55.77"
+          />
+          <circle
+            class="front-weel black-fill"
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            cx="492.48"
+            cy="589.98"
+            r="45.04"
+          />
+          <circle
+            class="back-weel-yellow tract-fill"
+            fill="#edad51"
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            cx="271.55"
+            cy="586"
+            r="35.7"
+          />
+          <circle
+            class="front-weel-yellow tract-fill"
+            fill="#edad51"
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            cx="492.48"
+            cy="589.98"
+            r="26.66"
+          />
           <path
-            class="tractor-body tract-fill" fill="#edad51" stroke="#231f20" stroke-miterlimit="10"
+            class="tractor-body tract-fill"
+            fill="#edad51"
+            stroke="#231f20"
+            stroke-miterlimit="10"
             d="M524.37,490.03c-0.12-0.16-0.22-0.34-0.32-0.55c-3.78-8.33-16.69-9.18-24.51-9.73
 	c-9.82-0.69-19.62-0.04-29.44,0.01c-2.31,0.45-4.66,0.58-7.02,0.61c0.08,3.72,0.67,7.44,0.27,11.16c-0.5,4.71-2.65,8.25-6.38,11.11
 	c-0.69,0.53-1.37,0.65-1.97,0.5c-4.76,2.61-11.45,1.97-16.24,0.22c-12.06-4.4-13.24-17.39-12.04-28.8c-1.8-0.35-3.6-0.73-5.38-1.16
@@ -301,17 +366,25 @@
 	c3.89,8.62,5.79,18.26,7.07,27.58C381.4,455.59,382.39,466.64,379.11,476.22z"
           />
           <path
-            class="yellow-pipe tract-fill" fill="#edad51" stroke="#231f20" stroke-miterlimit="10"
+            class="yellow-pipe tract-fill"
+            fill="#edad51"
+            stroke="#231f20"
+            stroke-miterlimit="10"
             d="M449.63,460.96c-6.27-0.18-12.56-0.61-18.73-1.37v31.54c0,5.21,6.71,9.43,14.99,9.43h0
 	c8.28,0,14.99-4.22,14.99-9.43v-30.21C457.12,461.19,453.2,461.07,449.63,460.96z"
           />
           <path
-            class="shovel-pole black-fill" stroke="#231f20" stroke-miterlimit="10"
+            class="shovel-pole black-fill"
+            stroke="#231f20"
+            stroke-miterlimit="10"
             d="M588.26,561.81L588.26,561.81c2.67-3.64,1.89-8.75-1.75-11.43l-72.88-53.49c-3.64-2.67-8.75-1.89-11.43,1.75
 	l0,0c-2.67,3.64-1.89,8.75,1.75,11.43l72.88,53.49C580.47,566.24,585.58,565.45,588.26,561.81z"
           />
           <path
-            class="shovel tract-fill" fill="#edad51" stroke="#231f20" stroke-miterlimit="10"
+            class="shovel tract-fill"
+            fill="#edad51"
+            stroke="#231f20"
+            stroke-miterlimit="10"
             d="M652.24,588.68c-6.59-0.26-12.3-1.63-17.78-5.29c-4.87-3.25-9.65-7.03-13.27-11.67
 	c-0.31-0.39-0.61-0.8-0.9-1.22c-0.84-0.86-1.61-1.71-2.3-2.48c-1.79-2-3.48-4.08-5.1-6.22c-10.31-10.25-15.69-25.26-23.74-37.1
 	c-0.22-0.32-0.35-0.64-0.43-0.95c-14.95,10.15-24.78,27.29-24.78,46.73c0,31.18,25.28,56.45,56.45,56.45
@@ -319,37 +392,42 @@
           />
 
           <path
-            class="airvent" fill="#231f20"
+            class="airvent"
+            fill="#231f20"
             d="M376.72,509.19c13.11,0,26.23,0,39.34,0c3.22,0,3.22-5,0-5c-13.11,0-26.23,0-39.34,0
 			C373.5,504.19,373.49,509.19,376.72,509.19L376.72,509.19z"
           />
 
           <path
-            class="airvent" fill="#231f20"
+            class="airvent"
+            fill="#231f20"
             d="M376.72,520.96c13.11,0,26.23,0,39.34,0c3.22,0,3.22-5,0-5c-13.11,0-26.23,0-39.34,0
 			C373.5,515.96,373.49,520.96,376.72,520.96L376.72,520.96z"
           />
 
           <path
-            class="airvent" fill="#231f20"
+            class="airvent"
+            fill="#231f20"
             d="M376.72,532.73c13.11,0,26.23,0,39.34,0c3.22,0,3.22-5,0-5c-13.11,0-26.23,0-39.34,0
 			C373.5,527.73,373.49,532.73,376.72,532.73L376.72,532.73z"
           />
 
           <path
-            class="tract-roof" fill="#2d2c2b" stroke="#231f20" stroke-miterlimit="10"
+            class="tract-roof"
+            fill="#2d2c2b"
+            stroke="#231f20"
+            stroke-miterlimit="10"
             d="M406.07,400.26H208.43l3.07-8.65c1.86-5.23,6.77-8.71,12.26-8.69l169.98,0.63c4.46,0.02,8.38,3,9.63,7.34
 	L406.07,400.26z"
           />
         </svg>
-		<!--traktor-->
-
-
+        <!--traktor-->
       </div>
       <p>
-        The textile industry is often considered one of the most polluting sectors, 
-        contributing to around 10% of greenhouse gas emissions and significant water pollution. 
-        Unfortunately, about 85% of textiles end up discarded in piles like this.
+        The textile industry is often considered one of the most polluting
+        sectors, contributing to around 10% of greenhouse gas emissions and
+        significant water pollution. Unfortunately, about 85% of textiles end up
+        discarded in piles like this.
       </p>
     </div>
 
@@ -394,70 +472,30 @@
           />
         </svg>
 
-
-
-
-		<!--kid-->
-       <svg class="kid1" x="0px" y="0px" viewBox="0 0 2000 1200">
-          <style type="text/css">
-            .one {
-              fill: #aa9379;
-            }
-            .two {
-              fill: #3a3a3a;
-            }
-            .three {
-              fill: #444545;
-            }
-            .four {
-              fill: #534f57;
-            }
-            .five {
-              fill: #6698d0;
-            }
-            .six {
-              fill: #577f60;
-            }
-            .seven {
-              fill: #a5a4a4;
-              stroke: #000000;
-              stroke-miterlimit: 10;
-            }
-            .eight {
-              fill: #7f7f7f;
-              stroke: #000000;
-              stroke-miterlimit: 10;
-            }
-            .nine {
-              fill: #282828;
-              stroke: #000000;
-              stroke-miterlimit: 10;
-            }
-            .ten {
-              fill: #e4ded0;
-              stroke: #000000;
-              stroke-miterlimit: 10;
-            }
-            .eleven {
-              fill: #63625f;
-              stroke: #000000;
-              stroke-miterlimit: 10;
-            }
-          </style>
-
+        <!--kid-->
+        <svg class="kid1" x="0px" y="0px" viewBox="0 0 2000 1200">
           <rect
             x="1293.36"
             y="943.46"
             transform="matrix(-1 -4.490109e-11 4.490109e-11 -1 2610.3 1902.9652)"
-            class="one"
+            class="kid-head"
+            fill="#aa9379"
             width="23.58"
             height="16.05"
           />
-          <ellipse class="one" cx="1302.19" cy="906.26" rx="35.94" ry="41.63" />
+          <ellipse
+            class="kid-head"
+            fill="#aa9379"
+            cx="1302.19"
+            cy="906.26"
+            rx="35.94"
+            ry="41.63"
+          />
 
           <ellipse
             transform="matrix(0.5516 -0.8341 0.8341 0.5516 -157.9883 1460.0016)"
-            class="two"
+            class="kid-hair"
+            fill="#3a3a3a"
             cx="1278.89"
             cy="876.94"
             rx="15.83"
@@ -466,7 +504,8 @@
 
           <ellipse
             transform="matrix(0.5516 -0.8341 0.8341 0.5516 -152.0477 1474.5789)"
-            class="two"
+            class="kid-hair"
+            fill="#3a3a3a"
             cx="1295.41"
             cy="878.7"
             rx="17.64"
@@ -475,7 +514,8 @@
 
           <ellipse
             transform="matrix(0.5516 -0.8341 0.8341 0.5516 -145.9362 1490.2325)"
-            class="two"
+            class="kid-hair"
+            fill="#3a3a3a"
             cx="1313.03"
             cy="880.84"
             rx="15.92"
@@ -484,7 +524,8 @@
 
           <ellipse
             transform="matrix(0.5516 -0.8341 0.8341 0.5516 -136.3096 1506.3357)"
-            class="two"
+            class="kid-hair"
+            fill="#3a3a3a"
             cx="1332.82"
             cy="879.94"
             rx="12.08"
@@ -493,7 +534,8 @@
 
           <ellipse
             transform="matrix(0.5516 -0.8341 0.8341 0.5516 -135.8779 1476.3538)"
-            class="two"
+            class="kid-hair"
+            fill="#3a3a3a"
             cx="1305.15"
             cy="864.55"
             rx="17.03"
@@ -502,7 +544,8 @@
 
           <ellipse
             transform="matrix(0.999 -0.0455 0.0455 0.999 -37.9359 61.1714)"
-            class="two"
+            class="kid-hair"
+            fill="#3a3a3a"
             cx="1324.38"
             cy="863.67"
             rx="13.88"
@@ -511,17 +554,25 @@
 
           <ellipse
             transform="matrix(0.999 -0.0455 0.0455 0.999 -37.8972 59.5482)"
-            class="two"
+            class="kid-hair"
+            fill="#3a3a3a"
             cx="1288.76"
             cy="862.01"
             rx="13.88"
             ry="11.18"
           />
 
-          <circle class="three" cx="1315.67" cy="905.88" r="4.94" />
+          <circle
+            class="kid-eye"
+            fill="#444545"
+            cx="1315.67"
+            cy="905.88"
+            r="4.94"
+          />
 
           <path
-            class="four"
+            class="kid-mouth"
+            fill="#534f57"
             d="M1317.44,921c-1.1-1.14-2.84-1.74-4.35-2c-4.42-0.76-8.91,0.53-12.96,2.24c-4.19,1.76-8.09,4.07-11.85,6.62
 				c-2.65,1.79-0.15,6.13,2.52,4.32c5.12-3.47,10.65-6.84,16.76-8.1c0.21-0.04,0.42-0.08,0.63-0.12c0.08-0.01,0.81-0.12,0.47-0.08
 				c-0.35,0.05,0.34-0.03,0.42-0.04c0.21-0.02,0.41-0.03,0.62-0.04c0.72-0.04,1.42,0.01,2.14,0.05c0.49,0.03-0.28-0.05-0.15-0.02
@@ -530,182 +581,319 @@
 				C1316.13,926.87,1319.66,923.33,1317.44,921L1317.44,921z"
           />
 
-          <circle class="three" cx="1288.76" cy="908.18" r="4.94" />
+          <circle
+            class="kid-eye"
+            fill="#444545"
+            cx="1288.76"
+            cy="908.18"
+            r="4.94"
+          />
 
           <path
-            class="five"
+            class="kid-shirt"
+            fill="#6698d0"
             d="M1284.62,1041.27l41.93-0.59c4.81-0.07,8.68-4.26,8.69-9.42l0.15-70.3c0.01-5.28-4.02-9.55-8.94-9.48
 			l-41.93,0.59c-4.81,0.07-8.68,4.26-8.69,9.42l-0.15,70.3C1275.67,1037.07,1279.69,1041.34,1284.62,1041.27z"
           />
           <path
-            class="five"
+            class="kid-shirt"
+            fill="#6698d0"
             d="M1256.24,1004.32l-2.08-1.26c-4.3-2.59-5.51-8.28-2.65-12.4l22.93-33.04c2.61-3.77,7.71-4.86,11.63-2.49
 			l2.08,1.26c4.3,2.59,5.51,8.28,2.65,12.4l-22.93,33.04C1265.26,1005.6,1260.17,1006.69,1256.24,1004.32z"
           />
           <path
-            class="five"
+            class="kid-shirt"
+            fill="#6698d0"
             d="M1357.28,999.04l-1.85,1.58c-3.83,3.25-9.6,2.6-12.6-1.43l-24.04-32.24c-2.74-3.68-2.16-8.85,1.34-11.82
 			l1.85-1.58c3.83-3.25,9.6-2.6,12.6,1.43l24.04,32.24C1361.36,990.89,1360.78,996.07,1357.28,999.04z"
           />
 
           <polygon
-            class="six sewing-sweater"
+            class="sewing-sweater"
+            fill="#577f60"
             points="1288.57,1047.34 1275.42,995.12 1388.71,963.79 1401.86,1016.02 		"
           />
           <polygon
-            class="six sewing-sweater"
+            class="sewing-sweater"
+            fill="#577f60"
             points="1331.17,1048.92 1348.01,1059.17 1400.84,1015.92 1384,1005.66 		"
           />
           <polygon
-            class="six sewing-sweater"
+            class="sewing-sweater"
+            fill="#577f60"
             points="1311.37,970.84 1321.22,953.16 1387.77,963.5 1377.92,981.19 		"
           />
 
           <path
-            class="two"
+            class="table"
+            fill="#3a3a3a"
             d="M1421.48,1073.2h-242.86c-6.11,0-11.05-4.95-11.05-11.05v-15.79c0-6.11,4.95-11.05,11.05-11.05h242.86
 			c6.11,0,11.05,4.95,11.05,11.05v15.79C1432.54,1068.25,1427.59,1073.2,1421.48,1073.2z"
           />
           <rect
             x="1185.26"
             y="1073.2"
-            class="two"
+            class="table"
+            fill="#3a3a3a"
             width="10.97"
             height="82.63"
           />
           <rect
             x="1379.92"
             y="1073.2"
-            class="two"
+            class="table"
+            fill="#3a3a3a"
             width="10.97"
             height="82.63"
           />
           <rect
             x="1223.97"
             y="1049.95"
-            class="two"
+            class="table"
+            fill="#3a3a3a"
             width="10.97"
             height="82.63"
           />
           <rect
             x="1411.35"
             y="1049.95"
-            class="two"
+            class="table"
+            fill="#3a3a3a"
             width="10.97"
             height="82.63"
           />
 
           <path
-            class="seven"
+            class="buttons-sewing"
+            fill="#a5a4a4"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1204.02,1016.86h-6.13c-2.37,0-4.29-1.92-4.29-4.29v-36.86c0-2.37,1.92-4.29,4.29-4.29h6.13
 			c2.37,0,4.29,1.92,4.29,4.29v36.86C1208.31,1014.94,1206.39,1016.86,1204.02,1016.86z"
           />
           <rect
             x="1297.09"
             y="979.49"
-            class="seven sewing-needle"
+            class="sewing-needle"
+            fill="#a5a4a4"
+            stroke="#000000"
+            stroke-miterlimit="10"
             width="0.66"
             height="19.44"
           />
           <rect
             x="1294.79"
             y="960.98"
-            class="seven sewing-needle"
+            class="sewing-needle"
+            fill="#a5a4a4"
+            stroke="#000000"
+            stroke-miterlimit="10"
             width="5.27"
             height="28.79"
           />
-          <rect x="1210.6" y="936.66" class="seven" width="1.07" height="20.39" />
+          <rect
+            x="1210.6"
+            y="936.66"
+            class="buttons-sewing"
+            fill="#a5a4a4"
+            stroke="#000000"
+            stroke-miterlimit="10"
+            width="1.07"
+            height="20.39"
+          />
 
-          <rect x="1282.53" y="946.49" class="eight" width="9.88" height="2.88" />
-          <rect x="1285.7" y="944.16" class="nine" width="3.17" height="2.34" />
-          <rect x="1284.54" y="940.56" class="seven" width="5.49" height="3.6" />
+          <rect
+            x="1282.53"
+            y="946.49"
+            class="buttons-sewing"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
+            width="9.88"
+            height="2.88"
+          />
+          <rect
+            x="1285.7"
+            y="944.16"
+            class="buttons-sewing"
+            fill="#282828"
+            stroke="#000000"
+            stroke-miterlimit="10"
+            width="3.17"
+            height="2.34"
+          />
+          <rect
+            x="1284.54"
+            y="940.56"
+            class="buttons-sewing"
+            fill="#a5a4a4"
+            stroke="#000000"
+            stroke-miterlimit="10"
+            width="5.49"
+            height="3.6"
+          />
 
-          <rect x="1227.09" y="946.85" class="eight" width="9.88" height="2.88" />
-          <rect x="1230.26" y="944.52" class="nine" width="3.17" height="2.34" />
-          <rect x="1229.1" y="940.92" class="seven" width="5.49" height="3.6" />
+          <rect
+            x="1227.09"
+            y="946.85"
+            class="buttons-sewing"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
+            width="9.88"
+            height="2.88"
+          />
+          <rect
+            x="1230.26"
+            y="944.52"
+            class="buttons-sewing"
+            fill="#282828"
+            stroke="#000000"
+            stroke-miterlimit="10"
+            width="3.17"
+            height="2.34"
+          />
+          <rect
+            x="1229.1"
+            y="940.92"
+            class="buttons-sewing"
+            fill="#a5a4a4"
+            stroke="#000000"
+            stroke-miterlimit="10"
+            width="5.49"
+            height="3.6"
+          />
 
           <path
-            class="ten"
+            class="sewing-machine"
+            fill="#e4ded0"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1302.48,968.3c3.05,0,5.52-2.47,5.52-5.52v-7.88c0-3.05-2.47-5.52-5.52-5.52h-74.52h-5.28h-10.6
 					c-6.14,0-11.12,4.98-11.12,11.12v63.69c0,6.14,4.98,11.12,11.12,11.12h15.88c0.76,0,1.51-0.08,2.23-0.22
 					c0.62,0.14,1.25,0.22,1.91,0.22h67.4c4.69,0,8.5-3.81,8.5-8.5v-12.14c0-4.69-3.81-8.5-8.5-8.5h-60.42V968.3H1302.48z"
           />
 
           <path
-            class="eleven"
+            class="buttons-sewing"
+            fill="#63625f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1227.3,982.46h-16.25c-2.28,0-4.13-1.85-4.13-4.13v-5.9c0-2.28,1.85-4.13,4.13-4.13h16.25
 			c2.28,0,4.13,1.85,4.13,4.13v5.9C1231.43,980.61,1229.58,982.46,1227.3,982.46z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1212.44,995.47h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1214.27,994.65,1213.45,995.47,1212.44,995.47z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1221.32,995.47h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1223.15,994.65,1222.33,995.47,1221.32,995.47z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1230.78,995.47h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1232.6,994.65,1231.79,995.47,1230.78,995.47z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1212.15,1006.17h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1213.98,1005.35,1213.16,1006.17,1212.15,1006.17z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1221.03,1006.17h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1222.86,1005.35,1222.04,1006.17,1221.03,1006.17z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1230.49,1006.17h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1232.31,1005.35,1231.5,1006.17,1230.49,1006.17z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1211.87,1016.86h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1213.69,1016.04,1212.87,1016.86,1211.87,1016.86z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1220.74,1016.86h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1222.57,1016.04,1221.75,1016.86,1220.74,1016.86z"
           />
           <path
-            class="eight"
+            class="buttons-sewing-nine"
+            fill="#7f7f7f"
+            stroke="#000000"
+            stroke-miterlimit="10"
             d="M1230.2,1016.86h-2.61c-1.01,0-1.83-0.82-1.83-1.83v-2.61c0-1.01,0.82-1.83,1.83-1.83h2.61
 			c1.01,0,1.83,0.82,1.83,1.83v2.61C1232.03,1016.04,1231.21,1016.86,1230.2,1016.86z"
           />
-          <circle class="seven" cx="1293.61" cy="959.66" r="3.66" />
+          <circle
+            class="buttons-sewing"
+            fill="#a5a4a4"
+            stroke="#000000"
+            stroke-miterlimit="10"
+            cx="1293.61"
+            cy="959.66"
+            r="3.66"
+          />
         </svg>
-		<!--kid-->
-
+        <!--kid-->
       </div>
       <p>
-        Most fast fashion clothing is made in China and other middle-income countries such as Turkey, Vietnam and Bangladesh. 
+        Most fast fashion clothing is made in China and other middle-income
+        countries such as Turkey, Vietnam and Bangladesh.
       </p>
     </div>
 
     <section class="brands">
       <div class="brands__list">
-      <h2>Did you know that these are fast fashion brands?:</h2>
-      <img class="zara" src="logo/Zara-logo.svg" alt="Logo of Zara" />
-      <img class="hm" src="logo/H&M-Logo.svg" alt="Logo of H&M" />
-      <img class="gina" src="logo/Gina-Tricot-logo.svg" alt="Logo of Gina Tricot" />
-      <img class="asos" src="logo/Asos-logo.svg" alt="Logo of ASOS" />
-      <img class="mango" src="logo/Mango-logo.svg" alt="Logo of Mango" />
-      <img class="shein" src="logo/Shein-logo.svg" alt="Logo of Shein" />
-    </div>
+        <h2>Did you know that these are fast fashion brands?:</h2>
+        <img class="zara" src="logo/Zara-logo.svg" alt="Logo of Zara" />
+        <img class="hm" src="logo/H&M-Logo.svg" alt="Logo of H&M" />
+        <img
+          class="gina"
+          src="logo/Gina-Tricot-logo.svg"
+          alt="Logo of Gina Tricot"
+        />
+        <img class="asos" src="logo/Asos-logo.svg" alt="Logo of ASOS" />
+        <img class="mango" src="logo/Mango-logo.svg" alt="Logo of Mango" />
+        <img class="shein" src="logo/Shein-logo.svg" alt="Logo of Shein" />
+      </div>
     </section>
 
     <section class="actions">
       <div class="actions__list">
-        <h2>Here are some things to have in mind, to help achieve the UN's goal of reducing waste:</h2>
+        <h2>
+          Here are some things to have in mind, to help achieve the UN's goal of
+          reducing waste:
+        </h2>
         <ul>
           <li>Take care of your clothes</li>
           <li>Buy clothes with quality</li>
@@ -713,129 +901,315 @@
           <li>Only buy when you really need something</li>
         </ul>
       </div>
-      <img src="img/goal-12.png" alt="UN climate goal 12" />
-
+      <img
+        class="animated-image"
+        src="img/goal-12.png"
+        alt="UN climate goal 12"
+      />
 
       <!--second hand-->
       <svg class="second-hand" viewBox="-100 400 2500 1500">
-<style type="text/css">
-	.st0{fill:#AA9379;}
-	.st1{fill:#404663;}
-	.st2{fill:#787762;}
-	.st3{fill:#444545;}
-	.st4{fill:#534F57;}
-	.st5{fill:#96CB68;}
-	.st6{fill:#466F7F;}
-	.st7{fill:#DDE077;}
-	.st8{fill:#6698D0;}
-	.sweater{fill:#6C577C;}
-</style>
-			<ellipse transform="matrix(0.8649 -0.5019 0.5019 0.8649 -369.1463 388.6444)" class="st0" cx="537.53" cy="880.2" rx="11.46" ry="8.8"/>
-		
-			<rect x="551.81" y="842.83" transform="matrix(0.5019 0.8649 -0.8649 0.5019 1029.0095 -50.248)" class="st0" width="12.65" height="50.84"/>
+        <ellipse
+          transform="matrix(0.8649 -0.5019 0.5019 0.8649 -369.1463 388.6444)"
+          class="hands-brunette"
+          fill="#AA9379"
+          cx="537.53"
+          cy="880.2"
+          rx="11.46"
+          ry="8.8"
+        />
 
-			<ellipse transform="matrix(0.8649 -0.5019 0.5019 0.8649 -340.2463 387.987)" class="st0" cx="550.76" cy="826.17" rx="11.46" ry="8.8"/>
-		
-			<rect x="565.04" y="788.8" transform="matrix(0.5019 0.8649 -0.8649 0.5019 988.8702 -88.6017)" class="st0" width="12.65" height="50.84"/>
-	
-	<path d="M589.66,1069.95l-0.38,1.91c-0.99,4.91,2.75,9.8,8.35,10.93l24.96,5.01c5.6,1.12,10.93-1.95,11.92-6.86l0.38-1.91
+        <rect
+          x="551.81"
+          y="842.83"
+          transform="matrix(0.5019 0.8649 -0.8649 0.5019 1029.0095 -50.248)"
+          class="hands-brunette"
+          fill="#AA9379"
+          width="12.65"
+          height="50.84"
+        />
+
+        <ellipse
+          transform="matrix(0.8649 -0.5019 0.5019 0.8649 -340.2463 387.987)"
+          class="hands-brunette"
+          fill="#AA9379"
+          cx="550.76"
+          cy="826.17"
+          rx="11.46"
+          ry="8.8"
+        />
+
+        <rect
+          x="565.04"
+          y="788.8"
+          transform="matrix(0.5019 0.8649 -0.8649 0.5019 988.8702 -88.6017)"
+          class="hands-brunette"
+          fill="#AA9379"
+          width="12.65"
+          height="50.84"
+        />
+
+        <path
+          d="M589.66,1069.95l-0.38,1.91c-0.99,4.91,2.75,9.8,8.35,10.93l24.96,5.01c5.6,1.12,10.93-1.95,11.92-6.86l0.38-1.91
 		c0.53-2.65-0.31-5.3-2.08-7.35c0.13-0.34,0.24-0.69,0.31-1.06l1.96-9.74c0.75-3.75-2.11-7.49-6.39-8.35l-3.79-0.76
-		c-4.28-0.86-8.36,1.49-9.11,5.24l-1.72,8.59l-12.48-2.51C595.98,1061.96,590.64,1065.04,589.66,1069.95z"/>
-	<path d="M664.73,1074.62v1.95c0,5.01,4.63,9.07,10.34,9.07h25.46c5.71,0,10.34-4.06,10.34-9.07v-1.95c0-2.7-1.35-5.13-3.49-6.79
+		c-4.28-0.86-8.36,1.49-9.11,5.24l-1.72,8.59l-12.48-2.51C595.98,1061.96,590.64,1065.04,589.66,1069.95z"
+        />
+        <path
+          d="M664.73,1074.62v1.95c0,5.01,4.63,9.07,10.34,9.07h25.46c5.71,0,10.34-4.06,10.34-9.07v-1.95c0-2.7-1.35-5.13-3.49-6.79
 		c0.06-0.36,0.1-0.73,0.1-1.1v-9.93c0-3.83-3.54-6.93-7.91-6.93h-3.86c-4.36,0-7.9,3.11-7.9,6.93v8.76h-12.73
-		C669.36,1065.55,664.73,1069.61,664.73,1074.62z"/>
-	
-		<path class="st1" d="M628.08,929.75l67.76,1.15c4.92,0.08,8.98-3.84,9.07-8.77l0.39-23.25c0.08-4.92-3.84-8.98-8.77-9.07
-			l-67.76-1.15c-4.92-0.08-8.98,3.84-9.07,8.77l-0.39,23.25C619.23,925.61,623.16,929.67,628.08,929.75z"/>
-		
-			<rect x="611.7" y="912.48" transform="matrix(-0.9914 -0.1307 0.1307 -0.9914 1130.8787 2048.5664)" class="st1" width="41.98" height="149.37"/>
-		
-			<rect x="666.81" y="913.41" transform="matrix(-0.9983 0.0588 -0.0588 -0.9983 1432.5265 1934.0127)" class="st1" width="41.98" height="149.37"/>
+		C669.36,1065.55,664.73,1069.61,664.73,1074.62z"
+        />
 
-		<rect x="649.87" y="752.88" transform="matrix(1 8.451866e-03 -8.451866e-03 1 6.499 -5.6295)" class="st0" width="38.87" height="26.46"/>
-	
-		<ellipse transform="matrix(8.451866e-03 -1 1 8.451866e-03 -22.4537 1360.5447)" class="st0" cx="674.82" cy="691.59" rx="68.64" ry="59.25"/>
-	
-		<path class="st2" d="M738.27,671.75c-8.24,4.67-17.61,5.31-25.56,2.49c-0.75,0.51-1.53,0.99-2.33,1.44
+        <path
+          class="pants-brunette"
+          fill="#404663"
+          d="M628.08,929.75l67.76,1.15c4.92,0.08,8.98-3.84,9.07-8.77l0.39-23.25c0.08-4.92-3.84-8.98-8.77-9.07
+			l-67.76-1.15c-4.92-0.08-8.98,3.84-9.07,8.77l-0.39,23.25C619.23,925.61,623.16,929.67,628.08,929.75z"
+        />
+
+        <rect
+          x="611.7"
+          y="912.48"
+          transform="matrix(-0.9914 -0.1307 0.1307 -0.9914 1130.8787 2048.5664)"
+          class="pants-brunette"
+          fill="#404663"
+          width="41.98"
+          height="149.37"
+        />
+
+        <rect
+          x="666.81"
+          y="913.41"
+          transform="matrix(-0.9983 0.0588 -0.0588 -0.9983 1432.5265 1934.0127)"
+          class="pants-brunette"
+          fill="#404663"
+          width="41.98"
+          height="149.37"
+        />
+
+        <rect
+          x="649.87"
+          y="752.88"
+          transform="matrix(1 8.451866e-03 -8.451866e-03 1 6.499 -5.6295)"
+          class="head-brunette"
+          fill="#AA9379"
+          width="38.87"
+          height="26.46"
+        />
+
+        <ellipse
+          transform="matrix(8.451866e-03 -1 1 8.451866e-03 -22.4537 1360.5447)"
+          class="head-brunette"
+          fill="#AA9379"
+          cx="674.82"
+          cy="691.59"
+          rx="68.64"
+          ry="59.25"
+        />
+
+        <path
+          class="hair-brunette"
+          fill="#787762"
+          d="M738.27,671.75c-8.24,4.67-17.61,5.31-25.56,2.49c-0.75,0.51-1.53,0.99-2.33,1.44
 			c-11.55,6.56-25.02,6.17-34.94,0.09c-14.17,6.86-30.87,2.68-38.4-9.85c-10.78,4.89-23.31,1.49-28.8-8.16
 			c-5.86-10.28-1.52-23.77,9.69-30.13c1.59-0.91,3.25-1.62,4.91-2.14c-1.59-3.02-2.31-6.35-1.92-9.77
 			c1.23-10.87,13.19-18.44,26.72-16.91c3.45,0.39,6.67,1.34,9.53,2.71c2.11-2.05,4.53-3.89,7.24-5.42
 			c13.4-7.61,29.46-5.55,39.06,4.09c2.39-0.32,4.89-0.36,7.45-0.07c12.3,1.39,21.66,9.83,22.31,19.53
-			c7.19,1.75,13.54,6.17,17.35,12.86C758.24,645.95,752.74,663.54,738.27,671.75z"/>
-	
-	<circle class="st3" cx="652.6" cy="690.78" r="8.15"/>
-	
-			<path class="st4" d="M694.63,722.73c-0.28,0.48,0.12-0.15,0.15-0.17c-0.28,0.23-0.5,0.56-0.77,0.8c-0.1,0.09-0.2,0.17-0.3,0.26
+			c7.19,1.75,13.54,6.17,17.35,12.86C758.24,645.95,752.74,663.54,738.27,671.75z"
+        />
+
+        <circle class="eye" fill="#444545" cx="652.6" cy="690.78" r="8.15" />
+
+        <path
+          class="mouth"
+          fill="#534F57"
+          d="M694.63,722.73c-0.28,0.48,0.12-0.15,0.15-0.17c-0.28,0.23-0.5,0.56-0.77,0.8c-0.1,0.09-0.2,0.17-0.3,0.26
 				c-0.32,0.29-0.32,0.03,0.16-0.12c-0.28,0.08-0.59,0.42-0.84,0.58c-0.31,0.19-0.63,0.37-0.95,0.54c-0.2,0.1-0.4,0.2-0.6,0.29
 				c-0.7,0.34,0.39-0.13-0.17,0.08c-1.03,0.38-2.06,0.71-3.13,0.95c-0.61,0.13-1.23,0.24-1.85,0.33c0.74-0.11-0.44,0.05-0.64,0.07
 				c-0.4,0.04-0.8,0.07-1.2,0.09c-3.97,0.24-7.81-0.16-11.52-0.85c-6.91-1.28-13.63-3.5-20.17-6.05c-1.26-0.49-2.74,0.54-3.08,1.75
 				c-0.39,1.42,0.48,2.58,1.75,3.08c10.1,3.93,21.2,7.53,32.18,7.12c4.76-0.18,9.86-1.17,13.6-4.32c0.64-0.54,1.27-1.18,1.7-1.9
-				C700.59,722.48,696.27,719.96,694.63,722.73L694.63,722.73z"/>
-		
-	
-	<circle class="st3" cx="696.93" cy="694.96" r="8.15"/>
-	<path class="st5" d="M701.9,914.42l-69.11-1.55c-7.93-0.18-14.25-7.14-14.2-15.64l0.73-115.91c0.06-8.7,6.75-15.68,14.87-15.5
-		l69.11,1.55c7.93,0.18,14.25,7.14,14.2,15.64l-0.73,115.91C716.72,907.62,710.02,914.6,701.9,914.42z"/>
-	<path class="st5" d="M555.55,865.97l1.47,3.62c3.03,7.47,17.25,8.01,31.02,1.18l110.31-54.7c12.58-6.24,20.22-16.41,17.46-23.23
-		l-1.47-3.62c-3.03-7.47-17.25-8.01-31.02-1.18l-110.31,54.7C560.42,848.98,552.78,859.15,555.55,865.97z"/>
-	<path class="st5" d="M566.92,810.66l1.35,3.78c2.79,7.79,10.66,11.99,17.18,9.17l52.15-22.62c5.95-2.58,8.59-10.13,6.04-17.25
-		l-1.35-3.78c-2.79-7.79-10.66-11.99-17.18-9.17l-52.15,22.62C567.01,795.99,564.37,803.54,566.92,810.66z"/>
+				C700.59,722.48,696.27,719.96,694.63,722.73L694.63,722.73z"
+        />
 
-			<ellipse transform="matrix(0.4009 -0.9161 0.9161 0.4009 -575.4675 887.9575)" class="st0" cx="391.22" cy="884" rx="8.8" ry="11.46"/>
-		
-			<rect x="363.08" y="849.03" transform="matrix(0.4009 -0.9161 0.9161 0.4009 -579.7893 862.2519)" class="st0" width="12.65" height="50.84"/>
-		
-			<ellipse transform="matrix(0.5116 -0.8592 0.8592 0.5116 -521.556 743.4915)" class="st0" cx="393.25" cy="830.55" rx="8.8" ry="11.46"/>
-		
-			<rect x="366.47" y="792.94" transform="matrix(0.5116 -0.8592 0.8592 0.5116 -521.0797 719.961)" class="st0" width="12.65" height="50.84"/>
-	
-	<path d="M265.29,1071.65v1.95c0,5.01-4.63,9.07-10.34,9.07h-25.46c-5.71,0-10.34-4.06-10.34-9.07v-1.95c0-2.7,1.35-5.13,3.49-6.79
+        <circle class="eye" fill="#444545" cx="696.93" cy="694.96" r="8.15" />
+        <path
+          class="shirt-brunette"
+          fill="#96CB68"
+          d="M701.9,914.42l-69.11-1.55c-7.93-0.18-14.25-7.14-14.2-15.64l0.73-115.91c0.06-8.7,6.75-15.68,14.87-15.5
+		l69.11,1.55c7.93,0.18,14.25,7.14,14.2,15.64l-0.73,115.91C716.72,907.62,710.02,914.6,701.9,914.42z"
+        />
+        <path
+          class="shirt-brunette"
+          fill="#96CB68"
+          d="M555.55,865.97l1.47,3.62c3.03,7.47,17.25,8.01,31.02,1.18l110.31-54.7c12.58-6.24,20.22-16.41,17.46-23.23
+		l-1.47-3.62c-3.03-7.47-17.25-8.01-31.02-1.18l-110.31,54.7C560.42,848.98,552.78,859.15,555.55,865.97z"
+        />
+        <path
+          class="shirt-brunette"
+          fill="#96CB68"
+          d="M566.92,810.66l1.35,3.78c2.79,7.79,10.66,11.99,17.18,9.17l52.15-22.62c5.95-2.58,8.59-10.13,6.04-17.25
+		l-1.35-3.78c-2.79-7.79-10.66-11.99-17.18-9.17l-52.15,22.62C567.01,795.99,564.37,803.54,566.92,810.66z"
+        />
+
+        <ellipse
+          transform="matrix(0.4009 -0.9161 0.9161 0.4009 -575.4675 887.9575)"
+          class="hands-blond"
+          fill="#AA9379"
+          cx="391.22"
+          cy="884"
+          rx="8.8"
+          ry="11.46"
+        />
+
+        <rect
+          x="363.08"
+          y="849.03"
+          transform="matrix(0.4009 -0.9161 0.9161 0.4009 -579.7893 862.2519)"
+          class="hands-blond"
+          fill="#AA9379"
+          width="12.65"
+          height="50.84"
+        />
+
+        <ellipse
+          transform="matrix(0.5116 -0.8592 0.8592 0.5116 -521.556 743.4915)"
+          class="hands-blond"
+          fill="#AA9379"
+          cx="393.25"
+          cy="830.55"
+          rx="8.8"
+          ry="11.46"
+        />
+
+        <rect
+          x="366.47"
+          y="792.94"
+          transform="matrix(0.5116 -0.8592 0.8592 0.5116 -521.0797 719.961)"
+          class="hands-blond"
+          fill="#AA9379"
+          width="12.65"
+          height="50.84"
+        />
+
+        <path
+          d="M265.29,1071.65v1.95c0,5.01-4.63,9.07-10.34,9.07h-25.46c-5.71,0-10.34-4.06-10.34-9.07v-1.95c0-2.7,1.35-5.13,3.49-6.79
 		c-0.06-0.36-0.1-0.73-0.1-1.1v-9.93c0-3.83,3.54-6.93,7.91-6.93h3.86c4.36,0,7.9,3.11,7.9,6.93v8.76h12.73
-		C260.66,1062.59,265.29,1066.65,265.29,1071.65z"/>
-	<path d="M339.46,1066.48v1.95c0,5.01-4.63,9.07-10.34,9.07h-25.46c-5.71,0-10.34-4.06-10.34-9.07v-1.95c0-2.7,1.35-5.13,3.49-6.79
+		C260.66,1062.59,265.29,1066.65,265.29,1071.65z"
+        />
+        <path
+          d="M339.46,1066.48v1.95c0,5.01-4.63,9.07-10.34,9.07h-25.46c-5.71,0-10.34-4.06-10.34-9.07v-1.95c0-2.7,1.35-5.13,3.49-6.79
 		c-0.06-0.36-0.1-0.73-0.1-1.1v-9.93c0-3.83,3.54-6.93,7.91-6.93h3.86c4.36,0,7.9,3.11,7.9,6.93v8.76h12.73
-		C334.83,1057.41,339.46,1061.47,339.46,1066.48z"/>
-	
-		<path class="st6" d="M301.94,923.09l-67.76,1.15c-4.92,0.08-8.98-3.84-9.07-8.77l-0.39-23.25c-0.08-4.92,3.84-8.98,8.77-9.07
-			l67.76-1.15c4.92-0.08,8.98,3.84,9.07,8.77l0.39,23.25C310.79,918.95,306.86,923.01,301.94,923.09z"/>
-		
-			<rect x="276.34" y="905.82" transform="matrix(0.9914 -0.1307 0.1307 0.9914 -125.647 47.2925)" class="st6" width="41.98" height="149.37"/>
-		
-			<rect x="221.23" y="906.75" transform="matrix(0.9983 0.0588 -0.0588 0.9983 58.148 -12.5483)" class="st6" width="41.98" height="149.37"/>
-	
-		<rect x="241.28" y="746.22" transform="matrix(-1 8.451866e-03 -8.451866e-03 -1 527.842 1516.6705)" class="st0" width="38.87" height="26.46"/>
-	
-		<ellipse transform="matrix(1 -8.451866e-03 8.451866e-03 1 -5.7799 2.1814)" class="st0" cx="255.2" cy="684.94" rx="59.25" ry="68.64"/>
-	
-		<path class="st7" d="M323.42,636.98c-4.62,9.64-17.11,14.4-28.68,11.27c-6.4,12.56-23.08,18.59-38.34,14.09
+		C334.83,1057.41,339.46,1061.47,339.46,1066.48z"
+        />
+
+        <path
+          class="pants-blond"
+          fill="#466F7F"
+          d="M301.94,923.09l-67.76,1.15c-4.92,0.08-8.98-3.84-9.07-8.77l-0.39-23.25c-0.08-4.92,3.84-8.98,8.77-9.07
+			l67.76-1.15c4.92-0.08,8.98,3.84,9.07,8.77l0.39,23.25C310.79,918.95,306.86,923.01,301.94,923.09z"
+        />
+
+        <rect
+          x="276.34"
+          y="905.82"
+          transform="matrix(0.9914 -0.1307 0.1307 0.9914 -125.647 47.2925)"
+          class="pants-blond"
+          fill="#466F7F"
+          width="41.98"
+          height="149.37"
+        />
+
+        <rect
+          x="221.23"
+          y="906.75"
+          transform="matrix(0.9983 0.0588 -0.0588 0.9983 58.148 -12.5483)"
+          class="pants-blond"
+          fill="#466F7F"
+          width="41.98"
+          height="149.37"
+        />
+
+        <rect
+          x="241.28"
+          y="746.22"
+          transform="matrix(-1 8.451866e-03 -8.451866e-03 -1 527.842 1516.6705)"
+          class="head-blond"
+          fill="#AA9379"
+          width="38.87"
+          height="26.46"
+        />
+
+        <ellipse
+          transform="matrix(1 -8.451866e-03 8.451866e-03 1 -5.7799 2.1814)"
+          class="head-blond"
+          fill="#AA9379"
+          cx="255.2"
+          cy="684.94"
+          rx="59.25"
+          ry="68.64"
+        />
+
+        <path
+          class="hair-blond"
+          fill="#DDE077"
+          d="M323.42,636.98c-4.62,9.64-17.11,14.4-28.68,11.27c-6.4,12.56-23.08,18.59-38.34,14.09
 			c-9.53,6.92-23.29,9.01-35.83,4.45c-0.87-0.32-1.71-0.65-2.53-1.02c-7.86,3.63-17.53,4.27-26.47,1.01
 			c-15.7-5.72-23.2-21.25-16.76-34.71c3.2-6.68,9.25-11.59,16.44-14.14c-0.35-9.05,8.35-18.06,20.82-20.95
 			c2.59-0.6,5.16-0.89,7.64-0.91c8.83-10.15,25.07-14.14,39.61-8.85c2.94,1.07,5.62,2.45,8,4.08c2.78-1.65,5.99-2.93,9.48-3.74
 			c13.7-3.17,26.76,2.28,29.17,12.17c0.76,3.11,0.37,6.29-0.94,9.29c1.76,0.27,3.54,0.72,5.26,1.34
-			C322.47,614.8,328.34,626.72,323.42,636.98z"/>
-	
-	<circle class="st3" cx="277.42" cy="684.12" r="8.15"/>
-	
-			<path class="st4" d="M231.08,718.59c1.3,2.18,3.83,3.55,6.09,4.47c6.42,2.62,13.94,1.97,20.59,0.8
+			C322.47,614.8,328.34,626.72,323.42,636.98z"
+        />
+
+        <circle class="eye" fill="#444545" cx="277.42" cy="684.12" r="8.15" />
+
+        <path
+          class="mouth"
+          fill="#534F57"
+          d="M231.08,718.59c1.3,2.18,3.83,3.55,6.09,4.47c6.42,2.62,13.94,1.97,20.59,0.8
 				c7.13-1.26,14.06-3.54,20.8-6.16c1.26-0.49,2.13-1.68,1.75-3.08c-0.33-1.2-1.81-2.24-3.08-1.75c-9.7,3.78-20.09,7.21-30.42,6.95
 				c-0.76-0.02-1.52-0.06-2.27-0.13c-0.38-0.03-0.76-0.08-1.13-0.13c0.72,0.09-0.39-0.07-0.57-0.1c-1.15-0.2-2.28-0.48-3.39-0.87
 				c-0.24-0.09-0.48-0.18-0.73-0.27c-0.61-0.23,0.5,0.25-0.07-0.03c-0.39-0.19-0.78-0.37-1.16-0.59c-0.3-0.17-0.59-0.35-0.87-0.54
 				c-0.13-0.09-0.26-0.21-0.4-0.29c-0.08-0.04,0.55,0.47,0.1,0.07c-0.35-0.31-0.67-0.65-1-0.98c-0.36-0.35,0.42,0.66,0.08,0.09
-				C233.75,713.3,229.42,715.82,231.08,718.59L231.08,718.59z"/>
-	
-	<circle class="st3" cx="233.09" cy="688.3" r="8.15"/>
-	<path class="st8" d="M228.12,907.76l69.11-1.55c7.93-0.18,14.25-7.14,14.2-15.64l-0.73-115.91c-0.06-8.7-6.75-15.68-14.87-15.5
-		l-69.11,1.55c-7.93,0.18-14.25,7.14-14.2,15.64l0.73,115.91C213.3,900.96,220,907.94,228.12,907.76z"/>
-	<path class="st8" d="M375.35,873.13l-1.42,3.76c-2.93,7.75-16.77,9.03-30.18,2.81l-107.43-49.88
-		c-12.25-5.69-19.7-15.63-17.02-22.71l1.42-3.76c2.93-7.75,16.77-9.03,30.18-2.81l107.43,49.88
-		C370.59,856.11,378.04,866.05,375.35,873.13z"/>
-	<path class="st8" d="M380.6,820.19l-1.4,2.94c-2.88,6.06-12.11,7.4-20.14,2.92l-64.28-35.92c-7.33-4.1-10.99-11.6-8.36-17.14
-		l1.4-2.94c2.88-6.06,12.11-7.4,20.14-2.92l64.28,35.92C379.57,807.15,383.23,814.65,380.6,820.19z"/>
+				C233.75,713.3,229.42,715.82,231.08,718.59L231.08,718.59z"
+        />
 
-	<polygon class="sweater" points="439.34,907.78 357.96,910.71 345.35,777.82 426.72,774.9 	"/>
-	<polygon class="sweater" points="454.4,860.8 474.63,844.39 426.27,776.01 406.04,792.42 	"/>
-	<polygon class="sweater" points="332.71,865.32 309.43,850.43 344.65,778.8 367.93,793.7 	"/>
-</svg>
+        <circle class="eye" fill="#444545" cx="233.09" cy="688.3" r="8.15" />
+        <path
+          class="pants-blond"
+          fill="#6698D0"
+          d="M228.12,907.76l69.11-1.55c7.93-0.18,14.25-7.14,14.2-15.64l-0.73-115.91c-0.06-8.7-6.75-15.68-14.87-15.5
+		l-69.11,1.55c-7.93,0.18-14.25,7.14-14.2,15.64l0.73,115.91C213.3,900.96,220,907.94,228.12,907.76z"
+        />
+        <path
+          class="pants-blond"
+          fill="#6698D0"
+          d="M375.35,873.13l-1.42,3.76c-2.93,7.75-16.77,9.03-30.18,2.81l-107.43-49.88
+		c-12.25-5.69-19.7-15.63-17.02-22.71l1.42-3.76c2.93-7.75,16.77-9.03,30.18-2.81l107.43,49.88
+		C370.59,856.11,378.04,866.05,375.35,873.13z"
+        />
+        <path
+          class="pants-blond"
+          fill="#6698D0"
+          d="M380.6,820.19l-1.4,2.94c-2.88,6.06-12.11,7.4-20.14,2.92l-64.28-35.92c-7.33-4.1-10.99-11.6-8.36-17.14
+		l1.4-2.94c2.88-6.06,12.11-7.4,20.14-2.92l64.28,35.92C379.57,807.15,383.23,814.65,380.6,820.19z"
+        />
+
+        <polygon
+          class="sweater"
+          fill="#6C577C"
+          points="439.34,907.78 357.96,910.71 345.35,777.82 426.72,774.9 	"
+        />
+        <polygon
+          class="sweater"
+          fill="#6C577C"
+          points="454.4,860.8 474.63,844.39 426.27,776.01 406.04,792.42 	"
+        />
+        <polygon
+          class="sweater"
+          fill="#6C577C"
+          points="332.71,865.32 309.43,850.43 344.65,778.8 367.93,793.7 	"
+        />
+      </svg>
     </section>
   </body>
 </html>

@@ -2,9 +2,13 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 html {
-  scroll-snap-type: y mandatory; /* kilde */
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: start;
 }
 
 /* slide 1 */
@@ -17,7 +21,11 @@ header {
   width: 100%;
   scroll-snap-align: start;
 }
-
+.top__start img {
+  position: absolute;
+  top: -100vh;
+  /*top: 50vh;*/
+}
 .top_title h1 {
   background: url(img/dessert.svg);
   background-position: center;
@@ -32,6 +40,7 @@ header {
   color: rgb(0, 0, 0);
   position: relative;
   margin-top: 25%;
+  z-index: 3;
 }
 
 /* slide 2 */
@@ -85,16 +94,11 @@ header {
 
 
 /* slide 4 */
-section {
-  scroll-snap-align: start; /* kilde */
-}
-
 .brands {
   background-image: linear-gradient(rgb(131, 118, 100), rgb(255, 255, 255));
   height: 100vh;
   width: 100vw;
   font-size: 20px;
-  
 }
 .brands__list {
   padding: 5%;
@@ -112,7 +116,7 @@ section {
   height: 100vh;
   width: 100vw;
   font-size: 20px;
-  
+  position: relative;
 }
 .actions__list {
   text-align: center;
@@ -127,9 +131,12 @@ section {
   margin-left: 70%;
   margin-top: 10%;
   position: absolute;
+  opacity: 0;
+  transition: opacity 15s ease;
 }
-
-
+.animate-in {
+  opacity: 1 !important;
+}
 
 
 
@@ -138,7 +145,6 @@ section {
   0% { transform: translateX(0); }
   100% { transform: translateX(100%); }
 }
-
 .cloud1,
 .cloud2,
 .cloud4 {
@@ -149,7 +155,6 @@ section {
   0% { transform: translateX(0); }
   100% { transform: translateX(50%); }
 }
-
 .cloud3 {
   animation: drift-cloud3 125s linear infinite; 
 }
@@ -169,7 +174,6 @@ section {
       transform: translateX(-50%);
   }
 }
-
 .tractor {
   animation: move-tractor 25s linear infinite;
 }
@@ -226,8 +230,6 @@ section {
   transform-origin: 588.26px 561.81px;
 }
 
-
-
 /*animation smoke*/
 @keyframes pulse {
   0%, 100% {
@@ -250,7 +252,6 @@ section {
     transform: translateY(3px);
   }
 }
-
 .sewing-needle {
   animation: move-needle 0.5s linear infinite alternate;
 }
@@ -263,11 +264,9 @@ section {
     transform: translateX(15px);
   }
 }
-
 .sewing-sweater {
   animation: sew 4s linear infinite alternate;
 }
-
 
 /*animation logo*/
 @keyframes flip {
@@ -275,11 +274,9 @@ section {
     transform: rotateY(180deg);
   }
 }
-
 .zara {
   animation: flip 8s infinite;
 }
-
 
 @keyframes beat {
   0%, 100% {
@@ -293,18 +290,14 @@ section {
   animation: beat 5s infinite;
 }
 
-
 @keyframes flip2 {
   50% {
     transform: rotateX(360deg);
   }
 }
-
 .gina {
   animation: flip2 10s infinite;
 }
-
-
 
 @keyframes spin {
   0% {
@@ -318,7 +311,6 @@ section {
   animation: spin 4s infinite;
 }
 
-
 @keyframes stretch {
   0%, 100% {
     transform: scaleX(1);
@@ -329,30 +321,4 @@ section {
 }
 .mango {
   animation: stretch 4s infinite;
-}
-
-
-@keyframes jump {
-  50% {
-    transform: translateY(-30px);
-  }
-}
-
-.shein {
-  animation: jump 2s infinite;
-}
-
-
-/*animation second-hand*/
-@keyframes move-sweater {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(140px);
-  }
-}
-
-.sweater {
-  animation: move-sweater 6s infinite;
 }
