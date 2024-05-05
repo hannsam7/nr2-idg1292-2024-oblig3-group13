@@ -1,7 +1,7 @@
 gsap.to(".rain", {
-    y: "150vh",
-    duration: 8,
-  });
+  y: "150vh",
+  duration: 8,
+});
 
 gsap.to(".sweater", {
   x: 140,
@@ -16,17 +16,16 @@ gsap.to(".shein", {
   repeat: -1,
 });
 
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            document.querySelector('.actions img').classList.add('animate-in');
-        } else {
-            document.querySelector('.actions img').classList.remove('animate-in');
-        }
-    });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      document.querySelector(".actions img").classList.add("animate-in");
+    } else {
+      document.querySelector(".actions img").classList.remove("animate-in");
+    }
+  });
 });
 
-const target = document.querySelector('.actions');
+const target = document.querySelector(".actions");
 
 observer.observe(target);

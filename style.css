@@ -1,16 +1,16 @@
-/* whole page */
+/* whole page style */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden; /* the content is "clipped" */
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; /* viewport of the scroll container must snap to a snap position if it isn't currently scrolled */
 }
 
 section {
-  scroll-snap-align: start;
+  scroll-snap-align: start; /* only one scroll is needed to go to the next section */
 }
 
 h2 {
@@ -34,7 +34,7 @@ header {
   /*top: 50vh;*/
 }
 .top__title h1 {
-  background: url(img/dessert.svg);
+  background: url(img/dessert.svg); /* background img of the first slide */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
