@@ -1,0 +1,357 @@
+/* whole page style */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* the content is "clipped" */
+}
+html {
+  scroll-snap-type: y mandatory; /* viewport of the scroll container must snap to a snap position if it isn't currently scrolled */
+}
+section {
+  scroll-snap-align: start; /* only one scroll is needed to go to the next section */
+}
+h2 {
+  font-size: 2vw;
+}
+
+/* slide 1 */
+header {
+  width: 100vw;
+  height: 100vh;
+}
+.top {
+  position: absolute;
+  width: 100%;
+  scroll-snap-align: start;
+
+  & img {
+    position: absolute;
+    top: -100vh;
+    /*top: 50vh;*/
+  }
+
+  &__title h1 {
+    background: url(img/dessert.svg); /* background img of the first slide */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 6vw;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-top: 25%;
+    z-index: 3;
+  }
+}
+
+/* slide 2 */
+.waste {
+  position: relative;
+  scroll-snap-align: start;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#5177a7, rgb(255, 255, 255));
+
+  &__image img {
+    position: absolute;
+  }
+}
+.waste p,
+.city p {
+  position: absolute;
+  z-index: 2;
+  margin-left: 90px;
+  padding: 10px;
+  max-width: 50%;
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
+}
+.text__box {
+  background-color: rgb(255 255 255 / 30%);
+  border-radius: 15px;
+}
+
+.clouds {
+  position: absolute;
+}
+.tractor {
+  position: absolute;
+}
+
+/* slide 3 */
+.city {
+  position: relative;
+  scroll-snap-align: start;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(131, 118, 100), rgb(255, 255, 255));
+
+  &__image img {
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.smoke {
+  position: absolute;
+}
+.kid1 {
+  position: absolute;
+  z-index: 5;
+}
+
+/* slide 4 */
+.brands {
+  background-image: linear-gradient(rgb(131, 118, 100), rgb(255, 255, 255));
+  height: 100vh;
+  width: 100vw;
+  font-size: 20px;
+
+  &__list {
+    padding: 5%;
+    text-align: center;
+  }
+
+  & img {
+    max-width: 20%;
+    padding: 5%;
+  }
+}
+
+/* slide 5 */
+.actions {
+  background-image: linear-gradient(#5177a7, rgb(255, 255, 255));
+  height: 100vh;
+  width: 100vw;
+  font-size: 20px;
+  position: relative;
+
+  &__list {
+    text-align: center;
+    padding: 3%;
+    & ul {
+      text-align: start;
+      max-width: 60%;
+      font-size: 1.3vw;
+    }
+  }
+  & img {
+    max-width: 25%;
+    max-height: 25%;
+    margin-left: 70%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 15s ease;
+  }
+}
+
+.animate-in {
+  opacity: 1 !important;
+}
+
+/*animation clouds*/
+@keyframes drift-cloud1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.cloud1,
+.cloud2,
+.cloud4 {
+  animation: drift-cloud1 140s linear infinite;
+}
+
+@keyframes drift-cloud3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+.cloud3 {
+  animation: drift-cloud3 125s linear infinite;
+}
+
+/*animation tractor*/
+@keyframes move-tractor {
+  0% {
+    transform: translateX(-50%);
+  }
+  40% {
+    transform: translateX(40px);
+  }
+  60% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.tractor {
+  animation: move-tractor 25s linear infinite;
+}
+
+/*animation tractor shovel*/
+@keyframes dump {
+  40% {
+    transform: rotate(0deg);
+  }
+  44% {
+    transform: rotate(40deg);
+  }
+  56% {
+    transform: rotate(40deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+}
+.shovel {
+  animation: dump 25s infinite;
+  transform-origin: 588.26px 561.81px;
+}
+
+/*animation tractor clothes*/
+@keyframes dump2 {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  40% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  44% {
+    transform: rotate(40deg);
+    opacity: 1;
+  }
+  56% {
+    transform: rotate(40deg);
+    opacity: 0;
+  }
+  60% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+.shirt-purple,
+.shirt-brown,
+.shirt-brown2,
+.shirt-green,
+.shirt-red,
+.pants-blue,
+.pants-darkblue,
+.pants-lightblue {
+  animation: dump2 25s infinite;
+  transform-origin: 588.26px 561.81px;
+}
+
+/*animation smoke*/
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+.smoke {
+  animation: pulse 5s infinite;
+}
+
+/*animation kid*/
+@keyframes move-needle {
+  0% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+.sewing-needle {
+  animation: move-needle 0.5s linear infinite alternate;
+}
+
+@keyframes sew {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+.sewing-sweater {
+  animation: sew 4s linear infinite alternate;
+}
+
+/*animation logo*/
+@keyframes flip {
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+.zara {
+  animation: flip 8s infinite;
+}
+
+@keyframes beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.hm {
+  animation: beat 5s infinite;
+}
+
+@keyframes flip2 {
+  50% {
+    transform: rotateX(360deg);
+  }
+}
+.gina {
+  animation: flip2 10s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.asos {
+  animation: spin 4s infinite;
+}
+
+@keyframes stretch {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.2);
+  }
+}
+.mango {
+  animation: stretch 4s infinite;
+}
