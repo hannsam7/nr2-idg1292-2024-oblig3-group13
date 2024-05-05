@@ -5,10 +5,10 @@ body {
   overflow-x: hidden; /* the content is "clipped" */
 }
 html {
-  scroll-snap-type: y mandatory; /* Viewport of the scroll container must snap to a snap position if it isn't currently scrolled */
+  scroll-snap-type: y mandatory; /* viewport of the scroll container must snap to a snap position if it isn't currently scrolled */
 }
 section {
-  scroll-snap-align: start;
+  scroll-snap-align: start; /* only one scroll is needed to go to the next section */ 
 }
 h2 {
   font-size: 2vw;
