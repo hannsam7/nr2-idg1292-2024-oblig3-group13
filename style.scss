@@ -4,11 +4,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
-
 html {
   scroll-snap-type: y mandatory;
 }
-
 section {
   scroll-snap-align: start;
 }
@@ -18,33 +16,33 @@ header {
   width: 100vw;
   height: 100vh;
 }
-
 .top {
   position: absolute;
   width: 100%;
   scroll-snap-align: start;
-}
-.top img {
-  position: absolute;
-  top: -100vh;
-  /*top: 50vh;*/
-}
-.top__title h1 {
-  background: url(img/dessert.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  font-size: 6vw;
-  font-family: "Times New Roman", Times, serif;
-  text-transform: uppercase;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: rgb(0, 0, 0);
-  position: relative;
-  margin-top: 25%;
-  z-index: 3;
+
+  & img {
+    position: absolute;
+    top: -100vh;
+    /*top: 50vh;*/
+  }
+
+  &__title h1 {
+    background: url(img/dessert.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 6vw;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-top: 25%;
+    z-index: 3;
+  }
 }
 
 /* slide 2 */
@@ -55,11 +53,11 @@ header {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(#5177a7, rgb(255, 255, 255));
-}
-.waste__image img {
-  position: absolute;
-}
 
+  &__image img {
+    position: absolute;
+  }
+}
 .waste p,
 .city p {
   position: absolute;
@@ -73,7 +71,6 @@ header {
 .clouds {
   position: absolute;
 }
-
 .tractor {
   position: absolute;
 }
@@ -86,16 +83,16 @@ header {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(rgb(131, 118, 100), rgb(255, 255, 255));
-}
-.city__image img {
-  position: absolute;
-  z-index: 1;
+
+  &__image img {
+    position: absolute;
+    z-index: 1;
+  }
 }
 
 .smoke {
   position: absolute;
 }
-
 .kid1 {
   position: absolute;
   z-index: 5;
@@ -107,14 +104,16 @@ header {
   height: 100vh;
   width: 100vw;
   font-size: 20px;
-}
-.brands__list {
-  padding: 5%;
-  text-align: center;
-}
-.brands img {
-  max-width: 20%;
-  padding: 5%;
+
+  &__list {
+    padding: 5%;
+    text-align: center;
+  }
+
+  & img {
+    max-width: 20%;
+    padding: 5%;
+  }
 }
 
 /* slide 5 */
@@ -124,22 +123,23 @@ header {
   width: 100vw;
   font-size: 20px;
   position: relative;
-}
-.actions__list {
-  text-align: center;
-  padding: 3%;
-}
-.actions__list ul {
-  text-align: start;
-}
-.actions img {
-  max-width: 30%;
-  max-height: 30%;
-  margin-left: 70%;
-  margin-top: 10%;
-  position: absolute;
-  opacity: 0;
-  transition: opacity 15s ease;
+
+  &__list {
+    text-align: center;
+    padding: 3%;
+    & ul {
+      text-align: start;
+    }
+  }
+  & img {
+    max-width: 30%;
+    max-height: 30%;
+    margin-left: 70%;
+    margin-top: 10%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 15s ease;
+  }
 }
 
 .animate-in {
@@ -253,7 +253,8 @@ header {
 
 /*animation smoke*/
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -300,7 +301,8 @@ header {
 }
 
 @keyframes beat {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -333,7 +335,8 @@ header {
 }
 
 @keyframes stretch {
-  0%, 100% {
+  0%,
+  100% {
     transform: scaleX(1);
   }
   50% {
@@ -342,4 +345,4 @@ header {
 }
 .mango {
   animation: stretch 4s infinite;
-}/*# sourceMappingURL=style.css.map */
+}

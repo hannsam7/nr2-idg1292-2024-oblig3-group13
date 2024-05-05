@@ -1,6 +1,6 @@
 gsap.to(".rain", {
-    y: "200vh",
-    duration: 12,
+    y: "150vh",
+    duration: 8,
   });
 
 gsap.to(".sweater", {
