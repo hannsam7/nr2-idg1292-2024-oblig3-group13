@@ -1,11 +1,11 @@
-/* whole page */
+/* whole page style */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden; /* the content is "clipped" */
 }
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; /* Viewport of the scroll container must snap to a snap position if it isn't currently scrolled */
 }
 section {
   scroll-snap-align: start;
