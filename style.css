@@ -14,7 +14,7 @@ section {
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 /* slide 1 */
@@ -34,7 +34,7 @@ header {
   /*top: 50vh;*/
 }
 .top__title h1 {
-  background: url(img/dessert.svg); /* background img of the first slide */
+  background: url(img/new-desert.svg); /* background img of the first slide */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@ header {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(#5177a7, rgb(255, 255, 255));
+  background-image: linear-gradient(#03142b, rgb(60, 84, 131));
 }
 .waste__image img {
   position: absolute;
@@ -76,8 +76,13 @@ header {
 }
 
 .text__box {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif; 
+  font-size: 16px; 
+  line-height: 1.5; 
+  background-color: #bbbbbb7c;
+  border-radius: 10px;
 }
 
 .clouds {
@@ -126,24 +131,54 @@ header {
   max-width: 20%;
   padding: 5%;
 }
+.info-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 9999;
+  line-height: 1.5; /* Adjust line height for better readability */
+  font-family: Arial, sans-serif; /* Specify a common font family */
+  font-size: 1.5vw;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 25px;
+}
+
+.close-button:hover {
+  color: #d65353;
+}
 
 /* slide 5 */
 .actions {
   background-image: linear-gradient(#5177a7, rgb(255, 255, 255));
   height: 100vh;
   width: 100vw;
-  font-size: 20px;
   position: relative;
+  font-size: 1.5rem; 
+  color: #000000; 
+  padding: 2em;
 }
-.actions__list {
-  text-align: center;
-  padding: 3%;
-}
+
 .actions__list ul {
-  text-align: start;
-  max-width: 60%;
-  font-size: 1.3vw;
+  list-style-type: disc; /* Use bullets for list items */
+  margin-left: 2rem; /* Add indentation to the list */
 }
+
+.actions__list li {
+  margin-bottom: 1rem; /* Add spacing between list items */
+}
+
 .actions img {
   max-width: 25%;
   max-height: 25%;
@@ -300,58 +335,53 @@ header {
   animation: sew 4s linear infinite alternate;
 }
 
-/*animation logo*/
-@keyframes flip {
-  50% {
-    transform: rotateY(180deg);
-  }
-}
-.zara {
-  animation: flip 8s infinite;
-}
-
-@keyframes beat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-.hm {
-  animation: beat 5s infinite;
+/* slide 6 */
+.summary {
+  background-image: linear-gradient(315deg, #70a1ff 0%, #bec293 74%);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-size: 1.5rem; 
+  color: #000000; 
+  padding: 2em;
 }
 
-@keyframes flip2 {
-  50% {
-    transform: rotateX(360deg);
-  }
-}
-.gina {
-  animation: flip2 10s infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.asos {
-  animation: spin 4s infinite;
+article {
+	max-width: 40em;
+  height: 20em;
+	margin: 0 auto;
+	border: 0.3em solid white;
+	padding: clamp(1em, 2vw, 1em);
+	border-radius: 0.5em;
 }
 
-@keyframes stretch {
-  0%, 100% {
-    transform: scaleX(1);
-  }
-  50% {
-    transform: scaleX(1.2);
-  }
+article > * + * {
+	margin-top: 1rem;
 }
-.mango {
-  animation: stretch 4s infinite;
-}/*# sourceMappingURL=style.css.map */
 
+dl {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 0.5em 0;
+}
+
+dl > * {
+	background: #f9ecec; ;
+	padding: 1rem;
+}
+
+dl > :nth-of-type(2n) {
+	background: #f0d9da;
+}
+
+dt {
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+dd {
+	margin: 0;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+}
