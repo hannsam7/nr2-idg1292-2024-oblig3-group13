@@ -2,7 +2,13 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden; // The content is "clipped"
+  box-sizing: border-box;
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 
 html {
   scroll-snap-type: y mandatory; // Viewport of the scroll container must snap to a snap position if it isn't currently scrolled
@@ -375,6 +381,7 @@ header {
   color: #000000;
   padding: 2em;
 
+  // Styling for the summary article
   article {
     max-width: 40em;
     height: 20em;
@@ -384,7 +391,37 @@ header {
     border-radius: 0.5em;
 
     > * + * {
-      margin-top: 1rem
+      margin-top: 1rem; // Applies to elements inside an <article> element and adds a top margin to all elements except the first one
     }
+  }
+
+  // Styling for definition list in the summary
+  dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5em 0;
+
+    > * {
+      background: #f9ecec;
+      padding: 1rem;
+    }
+
+    > :nth-of-type(2n) {
+      background: #f0d9da;
+    }
+  }
+
+  // Styling for description list terms
+  dt {
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+
+  // Styling for description list descriptions
+  dd {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
   }
 }

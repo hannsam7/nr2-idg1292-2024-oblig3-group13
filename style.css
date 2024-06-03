@@ -2,6 +2,11 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 html {
@@ -346,4 +351,26 @@ header {
 }
 .summary article > * + * {
   margin-top: 1rem;
+}
+.summary dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5em 0;
+}
+.summary dl > * {
+  background: #f9ecec;
+  padding: 1rem;
+}
+.summary dl > :nth-of-type(2n) {
+  background: #f0d9da;
+}
+.summary dt {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.summary dd {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
