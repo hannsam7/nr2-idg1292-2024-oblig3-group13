@@ -64,7 +64,7 @@ if (!prefersReducedMotion) {
 function createCloseButton(textBox) {
   const closeButton = document.createElement('span');
   closeButton.classList.add('close-button');
-  closeButton.textContent = '✕';
+  closeButton.textContent = '✕'; // "x" will be visable for the user as the close button
   closeButton.addEventListener('click', () => {
     textBox.remove(); // Remove text box when the close button is clicked
   });

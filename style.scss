@@ -373,7 +373,7 @@ header {
 
 // Slide 6
 .summary {
-  background-image: linear-gradient(315deg, #70a1ff 0%, #bec293 74%);
+  background-image: linear-gradient(#5177a7, rgb(255, 255, 255));
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -381,47 +381,49 @@ header {
   color: #000000;
   padding: 2em;
 
-  // Styling for the summary article
   article {
     max-width: 40em;
     height: 20em;
-    margin: 0 auto;
+    margin: 1.5em auto 2em;
     border: 0.3em solid white;
     padding: clamp(1em, 2vw, 1em);
-    border-radius: 0.5em;
+    border-radius: 25px;
 
     > * + * {
-      margin-top: 1rem; // Applies to elements inside an <article> element and adds a top margin to all elements except the first one
+      margin-top: 1rem;
     }
   }
 
-  // Styling for definition list in the summary
-  dl {
+  dl { // Defenition list
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0.5em 0;
+    border-radius: 25px;
 
     > * {
-      background: #f9ecec;
-      padding: 1rem;
+      background: #4869e189;
+      padding: 0.5em;
     }
 
     > :nth-of-type(2n) {
-      background: #f0d9da;
+      background: #4e9ee898;
     }
   }
 
-  // Styling for description list terms
-  dt {
+  dt { // Defenition title
     font-weight: 700;
     font-size: 1.3rem;
+    color: white;
   }
 
-  // Styling for description list descriptions
-  dd {
+  dd { // Defenition of the title of the defenition list
     margin: 0;
-    padding: 1rem;
     display: flex;
     align-items: center;
+    color: white;
+  }
+
+  &__title { // Style for the title of the "summary" page
+    color: white;
   }
 }
