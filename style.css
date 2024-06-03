@@ -1,23 +1,21 @@
-/* Whole page style */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden; /* The content is "clipped" */
+  overflow-x: hidden;
 }
 
 html {
-  scroll-snap-type: y mandatory; /* Viewport of the scroll container must snap to a snap position if it isn't currently scrolled */
+  scroll-snap-type: y mandatory;
 }
 
 section {
-  scroll-snap-align: start; /* Only one scroll is needed to go to the next section */
+  scroll-snap-align: start;
 }
 
 h2 {
   font-size: 2.5vw;
 }
 
-/* Slide 1 */
 header {
   width: 100vw;
   height: 100vh;
@@ -31,11 +29,10 @@ header {
 .top img {
   position: absolute;
   top: -100vh;
-  /*top: 50vh;*/
 }
 
 .top__title h1 {
-  background: url(img/new-desert.svg); /* Background img of the first slide */
+  background: url(img/new-desert.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +49,6 @@ header {
   z-index: 3;
 }
 
-/* Slide 2 */
 .waste {
   position: relative;
   scroll-snap-align: start;
@@ -64,9 +60,7 @@ header {
 .waste__image img {
   position: absolute;
 }
-
-.waste p,
-.city p {
+.waste p {
   position: absolute;
   z-index: 2;
   margin-left: 90px;
@@ -76,27 +70,24 @@ header {
   color: rgb(0, 0, 0);
 }
 
-/* Styling for text box */
 .text__box {
   padding: 20px;
   border-radius: 10px;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #bbbbbb7c;
+  background-color: rgba(187, 187, 187, 0.4862745098);
   border-radius: 10px;
 }
-/* Positioning for clouds */
+
 .clouds {
   position: absolute;
 }
 
-/* Positioning for tractor */
 .tractor {
   position: absolute;
 }
 
-/* Slide 3 */
 .city {
   position: relative;
   scroll-snap-align: start;
@@ -109,6 +100,15 @@ header {
   position: absolute;
   z-index: 1;
 }
+.city p {
+  position: absolute;
+  z-index: 2;
+  margin-left: 90px;
+  padding: 10px;
+  max-width: 50%;
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
+}
 
 .smoke {
   position: absolute;
@@ -119,7 +119,6 @@ header {
   z-index: 5;
 }
 
-/* Slide 4 */
 .brands {
   background-image: linear-gradient(rgb(131, 118, 100), rgb(255, 255, 255));
   height: 100vh;
@@ -135,7 +134,6 @@ header {
   padding: 5%;
 }
 
-/* Styling for the info box */
 .info-box {
   position: fixed;
   top: 50%;
@@ -146,12 +144,11 @@ header {
   border: 1px solid black;
   border-radius: 5px;
   z-index: 9999;
-  line-height: 1.5; /* More line height for better readability */
+  line-height: 1.5;
   font-family: Arial, sans-serif;
   font-size: 1.5vw;
 }
 
-/* Styling for the close button in the info box */
 .close-button {
   position: absolute;
   top: 5px;
@@ -160,12 +157,10 @@ header {
   color: #000000;
   font-size: 25px;
 }
-
 .close-button:hover {
   color: #d65353;
 }
 
-/* Slide 5 */
 .actions {
   background-image: linear-gradient(#5177a7, rgb(255, 255, 255));
   height: 100vh;
@@ -175,18 +170,13 @@ header {
   color: #000000;
   padding: 2em;
 }
-
-/* Styling for the action list */
 .actions__list ul {
-  list-style-type: disc; /* Use bullets for list items */
-  margin-left: 2rem; /* Add indentation to the list */
+  list-style-type: disc;
+  margin-left: 2rem;
 }
-
 .actions__list li {
-  margin-bottom: 1rem; /* Add spacing between list items */
+  margin-bottom: 1rem;
 }
-
-/* Image styling for the actions slide */
 .actions img {
   max-width: 25%;
   max-height: 25%;
@@ -196,12 +186,10 @@ header {
   transition: opacity 15s ease;
 }
 
-/* Animation class to make elements fade in */
 .animate-in {
   opacity: 1 !important;
 }
 
-/* Animation clouds */
 @keyframes drift-cloud1 {
   0% {
     transform: translateX(0);
@@ -228,7 +216,6 @@ header {
   animation: drift-cloud3 125s linear infinite;
 }
 
-/* Animation for moving the tractor */
 @keyframes move-tractor {
   0% {
     transform: translateX(-50%);
@@ -247,7 +234,6 @@ header {
   animation: move-tractor 25s linear infinite;
 }
 
-/* Animation tractor shovel */
 @keyframes dump {
   40% {
     transform: rotate(0deg);
@@ -267,7 +253,6 @@ header {
   transform-origin: 588.26px 561.81px;
 }
 
-/* Animation tractor clothes */
 @keyframes dump2 {
   0% {
     transform: rotate(0deg);
@@ -306,10 +291,8 @@ header {
   transform-origin: 588.26px 561.81px;
 }
 
-/* Animation for pulsing smoke */
 @keyframes pulse {
-  0%,
-  100% {
+  0%, 100% {
     transform: scale(1);
   }
   50% {
@@ -320,7 +303,6 @@ header {
   animation: pulse 5s infinite;
 }
 
-/* Animation for the sewing needle */
 @keyframes move-needle {
   0% {
     transform: translateY(-8px);
@@ -332,7 +314,7 @@ header {
 .sewing-needle {
   animation: move-needle 0.5s linear infinite alternate;
 }
-/* Animation for the sewing motion */
+
 @keyframes sew {
   0% {
     transform: translateX(-50px);
@@ -345,7 +327,6 @@ header {
   animation: sew 4s linear infinite alternate;
 }
 
-/* Slide 6 */
 .summary {
   background-image: linear-gradient(315deg, #70a1ff 0%, #bec293 74%);
   height: 100vh;
@@ -355,8 +336,7 @@ header {
   color: #000000;
   padding: 2em;
 }
-/* Styling for the summary article */
-article {
+.summary article {
   max-width: 40em;
   height: 20em;
   margin: 0 auto;
@@ -364,37 +344,6 @@ article {
   padding: clamp(1em, 2vw, 1em);
   border-radius: 0.5em;
 }
-
-article > * + * {
-  margin-top: 1rem; /* Applies to elements inside an <article> element and adds a top margin to all elements except the first one */
-}
-
-/* Styling for the definition list in the summary */
-dl {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.5em 0;
-}
-
-dl > * {
-  background: #f9ecec;
-  padding: 1rem;
-}
-
-dl > :nth-of-type(2n) {
-  background: #f0d9da;
-}
-
-/* Styling for description list terms */
-dt {
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-
-/* Styling for description list descriptions */
-dd {
-  margin: 0;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-}
+.summary article > * + * {
+  margin-top: 1rem;
+}/*# sourceMappingURL=style.css.map */
